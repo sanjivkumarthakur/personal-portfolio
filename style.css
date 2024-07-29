@@ -1,0 +1,597 @@
+:root{
+    --bg-color: rgb(255, 85, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background: skyblue;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    max-width: 1400px;
+
+}
+
+/* HEADING */
+
+nav{
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 4px -2px 40px 9px;
+    position: sticky;
+    top: 0;
+
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    
+}
+
+.logo{
+    font-size: x-large;
+    padding-right: 1rem;
+    font-family: "Joti One", serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.post{
+    font-size: 1.3rem;
+
+}
+
+.post::before{
+    content: "";
+    width: 4px;
+    height: 100%;
+    background: var(--bg-color);
+    margin-left: -1rem;
+}
+
+ul{
+    /* justify-content: center;
+    align-items: center; */
+}
+ul>li{
+    list-style: none;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+}
+
+ul>li:hover{
+    color: var(--bg-color);
+}
+
+
+/* <!-- HERO SECTION --> */
+
+.darkmenu{
+    position: fixed;
+    left: 1.5rem;
+    top: 6rem;
+    background: transparent;
+}
+
+
+.hero{
+    margin-top: 20rem;
+     border: 2px solid red;
+     /* margin: auto; */
+     background: #ff4500;
+     justify-content: space-between;
+     align-items: center;
+    flex-wrap: wrap;
+     
+}
+
+.hero-section{
+    background: orangered;
+}
+
+.detail{
+    background: transparent;
+    flex-wrap: wrap;
+    
+    
+}
+
+.detail-section{
+    background: orangered;
+}
+.name{
+    background: transparent;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.iam{
+    /* background: #ff4500; */
+    background: transparent;
+    padding-left: 5rem;
+    /* font-weight: bold; */
+    font-size: 1.3rem;
+}
+
+.iam span{
+    background: orangered;
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.position{
+    background: transparent;
+    margin-top: 1rem;
+    margin-left: 8rem;
+    /* position: relative;
+    left: 30%; */
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    /* margin-left: 3rem; */
+}
+
+.detail>p{
+    background: transparent;
+    margin-top: 2rem;
+    /* position: relative;
+    left: 15%; */
+    font-size: 1.3rem;
+    margin-left: 7em;
+    /* margin-bottom: 2rem; */
+
+    /* font-weight: bolder; */
+    /* letter-spacing: 5px; */
+}
+
+.detail>button{
+    height: 3rem;
+    width: 9rem;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    background: #2a2a2a;
+    color: white;
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+
+}
+
+.detail>button>i{
+    background: transparent;
+}
+
+.image{
+    background: transparent;
+}
+.img1{
+    background: transparent;
+    height: 150%;
+    position: relative;
+    right: 5rem;
+    top: -40%;
+    /* z-index: 1; */
+}
+
+.banner{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 4rem;
+    padding: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background: linear-gradient(
+        to top, 
+        skyblue 0%, 
+        skyblue 50%, 
+        orangered 50%, 
+        orangered 100%); */
+    /* width: 90%;
+    z-index: -1; */
+
+    /* background: orangered repeat-x; */
+    /* background-size: 50% auto; */
+    /* width: 90% */
+}
+
+.info-content .icon-container {
+    background: orangered;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(100px);
+    
+}
+
+.info-content span{
+    background: transparent;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.fa-award{
+    background: transparent;
+}
+
+.info-content p{
+    color: #ff4500;
+    backdrop-filter: blur(1px);
+    background: transparent;
+    margin-top: 1rem;
+}
+
+.info-driver{
+    background: grey;
+    width: 2px;
+    height: 70px
+}
+/* <!-- SKILL SECTION --> */
+
+.skill{
+    margin-top: 5rem;
+    
+    /* border: 2px solid black; */
+}
+
+.skills{
+    justify-content: center;
+    font-weight: bolder;
+   
+}
+
+.skills h2{
+    border-bottom: 3px solid orangered;
+    margin-bottom: 10px;
+}
+
+.skill-items{
+    justify-content: space-around;
+    margin: 10px;
+    margin-top: 2rem;
+}
+
+.fa-brands{
+    font-size: xxx-large;
+}
+
+.js{
+    padding-left: 1.4rem;
+}
+/* <!-- PROJECT SECTION --> */
+
+.projects{
+    margin: 5rem;
+    /* border: 2px solid red; */
+    width: 90%;
+
+}
+
+.Project-title{
+    justify-content: center;
+}
+
+.Project-title h2{
+    border-bottom: 3px solid orangered;
+    margin-bottom: 5rem;
+}
+
+
+
+.self-projects{
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    /* border: 2px solid blue; */
+    flex-grow: 1;
+    margin: 1rem;
+
+    
+}
+ .projext{
+    /* border: 2px solid green; */
+    margin-bottom: 1rem;
+    padding: 1em;
+    width: 400px;
+    border-radius: 5px;
+    justify-content: center; 
+    box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.464);
+}
+
+.photo img{
+    padding-left: 2.5rem;
+}
+.p-logo{
+    justify-content: center;
+    margin: 1rem;
+}
+.p-logo .fa-brands{
+    margin-top: 7px;
+    font-size: 15px;
+}
+
+.p-name{
+    margin-bottom: 20px;
+}
+/* <!-- ABOUT --> */
+
+.about-section{
+    margin-top: 5rem;
+    background: rgb(155 219 126);
+    padding: 50px;
+    /* flex-wrap: wrap; */
+}
+
+.about-photo{
+    /* border: 2px solid red; */
+    background: transparent ;
+    height: 400px;
+    width: 50%;
+    margin-left: 1rem;
+    margin-top: 20%;
+    
+}
+
+.about-photo img{
+    background: transparent;
+}
+
+.about-details{
+    /* border: 2px solid red; */
+    margin: 1rem;
+    width: 100%;
+    background: transparent;
+}
+
+.about-me{
+    justify-content: center;
+    background: transparent;
+}
+
+.about-me h2{
+    border-bottom: 3px solid orangered;
+    background: transparent;
+    margin-top: 1rem;
+}
+
+.about-name{
+    background: transparent;
+    margin-top: 15%;
+}
+
+.about-name span{
+    background: transparent;
+    font-size: xx-large;
+    font-weight: bolder;
+    letter-spacing: 5px;
+
+}
+
+.p1,.p2{
+    background: transparent;
+}
+
+.about-details .p1 p{
+    background: transparent;
+    margin-top: 15%;
+}
+
+.about-details .p2 p{
+    background: transparent;
+    margin-top: 5%;
+}
+
+.adress{
+    background: transparent;
+    margin-top: 5%;
+}
+
+.adress span{
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+}
+.interest{
+    background: transparent;
+    margin-top: 5%;
+}
+
+.interest span{
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.interests{
+    background: transparent;
+    margin-top: 1rem;
+}
+
+.interests p{
+    background: transparent;
+    justify-content: space-between;
+}
+
+
+
+
+/* <!-- CONTACT --> */
+
+.contact{
+    margin: 5%;
+    justify-content: center;
+}
+
+.contact > span > h2{
+    border-bottom: 3px solid orangered;
+    margin-bottom: 1rem;
+}
+
+.contact-area{
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.contact1 a, .contact2 a, .contact3 a, .contact4 a{
+    color: black;
+}
+
+.contact-section p{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact-link{
+    margin-top: 5rem;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.email-section{
+    /* border: 2px solid red; */
+    background: black;
+}
+
+.email-section{    
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    padding: 1rem;
+    border-radius: 40px;
+    /* font-weight: bold; */
+}
+
+.email-section span{
+    background: black;
+}
+
+.email-section i{
+    background: orangered;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.email-icon{
+    background: black;
+}
+
+
+/* <!-- FOOTER --> */
+
+.footer{
+    margin-top: 5rem;
+}
+.footer-items{
+    margin-top: 1rem;
+    background: black;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding: 1rem ;
+    
+}
+
+.footer1,.footer2{
+    margin-left: 3rem;
+}
+
+
+.links h2{
+    background: black;
+    color: white;
+}
+
+.Links{
+    
+    /* flex-direction: column; */
+    background: black;
+    padding-top: 1rem;
+   
+}
+
+
+.Links ul li{
+    background: black;
+   
+}
+
+.Links ul li a{
+    list-style: none;
+    text-decoration: none;
+    background: black;
+    color: white;
+    margin-top: 1rem;
+}
+
+.copyright{
+    justify-content: center;
+    background: black;
+    align-items: center;
+    height: 100px;
+    /* margin-top: 1rem; */
+}
+
+.copyright p{
+    background: transparent;
+    color: white;
+}
+
+/* scroll */
+
+.goUp{
+    height: 70px;
+    width: 70px;
+    background: orangered;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    border-radius: 50%;
+}
+
+.goUp a{
+    text-decoration: none;
+    color: #2a2a2a;
+    background: transparent;
+}
+
+.goUp a i{
+    background: transparent;
+    font-size: 3rem;
+}

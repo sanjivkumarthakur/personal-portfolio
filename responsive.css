@@ -1,0 +1,65 @@
+@media (max-width: 550px) {
+    .hero-section{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .detail{
+        margin-top: 10rem;
+        justify-content: center;
+    }
+
+    .detail-section{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+    }
+/* 
+    .button{
+        position: absolute;
+        left: 40%;
+    }*/
+
+
+
+    .image{
+        width: 60%;
+        justify-content: center;
+        position: absolute;
+        top: 30%;
+        left: 35%;
+      
+    }
+
+    .darkmenu{
+        background: transparent;
+        /* z-index: 1; */
+    }
+
+    .info-driver{
+        /* height: 0;
+        width: 0; */
+        display: none;
+    }
+
+    .skill-items{
+        justify-content: space-around;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        margin: 10px;
+        margin-top: 2rem;
+    }
+
+    .about-section{
+        flex-direction: column;
+    }
+
+    .about-photo{
+        width: 100%;
+        margin-top: 0rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
