@@ -30,6 +30,12 @@ html{
 
 }
 
+.wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* HEADING */
 
 nav{
