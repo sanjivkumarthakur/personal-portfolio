@@ -1,4 +1,4 @@
-@media (max-width: 550px) {
+@media (max-width: 990px) {
 
     .wrapper{
         width: 100%;
@@ -8,15 +8,17 @@
     }
 
     .nav{
-        display: none;
+        display: inline;
     }
     .hero-section{
+        width: 90%;
         flex-direction: column-reverse;
         justify-content: center;
+        align-items: center;
     }
 
     .detail{
-        margin-top: 10rem;
+        margin-top: 1rem;
         justify-content: center;
     }
 
@@ -36,11 +38,13 @@
 
 
     .image{
-        width: 60%;
+        width: 50%;
+        display: flex;
         justify-content: center;
-        position: absolute;
+        align-items: center;
+        position: relative;
         top: 30%;
-        left: 35%;
+        left: 15%;
       
     }
 
@@ -72,5 +76,40 @@
         margin-top: 0rem;
         justify-content: center;
         align-items: center;
+    }
+}
+
+/* for-mobile */
+
+@media (max-width:600px) {
+    .image{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 30%;
+        left: 30%;
+      
+    }   
+
+    .nav{
+        display: none;
+    }
+
+    .hambergur{
+        display: inline;
+        font-size: x-large;
+        position: absolute;
+        left: 95%;
+        top: 3%;
+    }
+
+    #hambergur{
+
+    }
+
+    [for="hambergur"]:checked {
+        zoom: 2;
     }
 }
