@@ -30,11 +30,17 @@ html{
 
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .wrapper{
     background: skyblue;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
     /* height: 100%; */
 }
 
@@ -200,8 +206,9 @@ ul>li:hover{
     background: transparent;
     height: 150%;
     position: relative;
-    right: 5rem;
+    /* right: 5rem; */
     top: -40%;
+    margin-left: 50%;
     /* z-index: 1; */
 }
 
@@ -459,9 +466,14 @@ ul>li:hover{
 
 /* <!-- CONTACT --> */
 
+.contact-section{
+    background: transparent;
+}
+
 .contact{
     margin: 5%;
     justify-content: center;
+    background: transparent;
 }
 
 .contact > span > h2{
@@ -608,6 +620,9 @@ ul>li:hover{
     font-size: 3rem;
 }
 
+.darkmenu{
+    background: transparent;
+}
 
 [for="darkmenu"]
 {
@@ -615,7 +630,7 @@ ul>li:hover{
     left: 1.5rem;
     top: 6rem;
     /* border: 2px solid red; */
-    /* background: skyblue; */
+    background: transparent;
     /* border-radius: 50%; */
 }
 
@@ -628,7 +643,9 @@ ul>li:hover{
 #darkmenu{
     display: none;
 }
-
+/* #darkmenu:checked{
+    zoom: 2;
+} */
 #darkmenu:checked + .wrapper{
     background-color: black;
     color: white;
@@ -638,11 +655,14 @@ ul>li:hover{
     color: white;
    }
 
-   .contact-section{
-    background: black;
-    color: red;
-   }
-
 }
 
 
+
+#hambergur{
+    display: none;
+}
+
+.fa-solid{
+    background: transparent;
+}

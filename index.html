@@ -11,16 +11,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
   
-  <label for="darkmenu">
-    <div class="darkmenu">
-      <i class="fa-solid fa-circle-half-stroke"></i>
-  </div>
-  </label>
+  
 
   <input type="checkbox" id="darkmenu">
+  
+
     <div class="wrapper flex">
+      <label for="darkmenu">
+        <div class="darkmenu">
+          <i class="fa-solid fa-circle-half-stroke" style="background-color: transparent;"></i>
+      </div>
+      </label>
        <!-- HEADING -->
         <header style="width: 100%;">
             <nav class="flex">
@@ -28,27 +32,28 @@
                     <div class="logo">Sanjiv</div>
                     <div class="post flex">Web developer</div>
                 </div>
+                <label for="hambergur">
+                  <span class="hambergur">
+                    <i class="fa-solid fa-bars"></i>
+                  </span>
+                </label>
+                <input type="checkbox" id="hambergur">
                 <div class="nav flex">
-                    <div class="menu">
+                    <!-- <div class="menu"> -->
                         <ul class="flex">
-                            <li>Home</li>
-                            <li>Skill</li>
-                            <li>Project</li>
-                            <li>About</li>
-                            <li>Contact</li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#Skill">Skill</a></li>
+                            <li><a href="#projects">Project</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact-us">Contact</a></li>
                         </ul>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </nav>
 
             <!-- hambergur -->
-        <label for="hambergur">
-          <span class="hambergur">
-            <i class="fa-solid fa-bars"></i>
-          </span>
-        </label>
 
-        <input type="checkbox" id="darkmenu">
+
 
 
         </header>
@@ -113,7 +118,7 @@
 
         <!-- SKILL SECTION -->
 
-        <section class="skill container">
+        <section class="skill container" id="Skill">
           <div class="skills flex">
             <h2>Skills</h2>
           </div>
@@ -155,7 +160,7 @@
 
         <!-- PROJECT SECTION -->
 
-<section class="projects">
+<section class="projects" id="projects">
   <div class="Project-title flex">
     <h2>My Projects</h2>
   </div>
@@ -226,7 +231,7 @@
 </section>
         <!-- ABOUT -->
 
-        <section class="about-section flex">
+        <section class="about-section flex" id="about">
           <div class="about-photo flex"> <img src="sanjiv-removebg-preview.png" alt="SANJIV"></div>
           <div class="about-details">
             <div class="about-me flex"><h2>About Us</h2></div>
@@ -258,8 +263,7 @@
         </section>
 
         <!-- CONTACT -->
-         
-        <section class="contact-section">
+        <section class="contact-section" id="contact-us">
           <div class="contact flex">
             <span> <h2>Contact Us</h2></span>
           </div>

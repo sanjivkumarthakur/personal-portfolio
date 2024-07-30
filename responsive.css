@@ -45,6 +45,7 @@
         position: relative;
         top: 30%;
         left: 15%;
+        margin-left: -40%;
       
     }
 
@@ -82,6 +83,30 @@
 /* for-mobile */
 
 @media (max-width:600px) {
+
+    .nav{
+        position: absolute;
+        display: block;
+        width: 250px;
+        height: 100vh;
+        /* flex-direction: column-reverse; */
+        top: 4rem;
+        left: 100vw;
+        font-size: 1.3rem;
+        box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.464);
+        background: transparent;
+        backdrop-filter: blur(5px);
+        /* justify-content: center; */
+    }
+
+    .nav ul{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        /* margin-top: 0.2rem; */
+        line-height: 3rem;
+    }
+
     .image{
         width: 50%;
         display: flex;
@@ -93,23 +118,36 @@
       
     }   
 
-    .nav{
-        display: none;
+    .img1{
+        margin-left: 1rem;
+        padding-left: 0;
     }
+    /* .nav{
+        display: none;
+    } */
 
     .hambergur{
-        display: inline;
+        display: flex;
+        align-items: center;
         font-size: x-large;
-        position: absolute;
+        /* position: absolute;
         left: 95%;
-        top: 3%;
+        top: 3%; */
     }
 
     #hambergur{
-
+        /* display: none; */
     }
 
-    [for="hambergur"]:checked {
-        zoom: 2;
+    #hambergur:checked + .nav{
+        left: calc(100vw - 250px);
+        transition: all 0.5s;
     }
+}
+
+@media (min-width:990px) {
+    .img1{
+        margin-right: 9rem;
+    }
+    
 }
