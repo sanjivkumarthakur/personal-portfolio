@@ -79,6 +79,10 @@
 
 @media (max-width:600px) {
 
+    .header{
+        width: 100%;
+    }
+
     .nav{
         position: absolute;
         display: block;
