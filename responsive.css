@@ -10,6 +10,7 @@
     .nav{
         display: inline;
     }
+
     .hero-section{
         width: 90%;
         flex-direction: column-reverse;
@@ -29,13 +30,6 @@
         margin: 0%;
         padding: 0%;
     }
-/* 
-    .button{
-        position: absolute;
-        left: 40%;
-    }*/
-
-
 
     .image{
         width: 50%;
@@ -51,18 +45,14 @@
 
     .darkmenu{
         background: transparent;
-        /* z-index: 1; */
     }
 
     .info-driver{
-        /* height: 0;
-        width: 0; */
         display: none;
     }
 
     .skill-items{
         justify-content: space-around;
-        /* flex-direction: column; */
         flex-wrap: wrap;
         margin: 10px;
         margin-top: 2rem;
@@ -80,7 +70,12 @@
     }
 }
 
+
+
+
 /* for-mobile */
+
+
 
 @media (max-width:600px) {
 
@@ -89,21 +84,17 @@
         display: block;
         width: 250px;
         height: 100vh;
-        /* flex-direction: column-reverse; */
         top: 4rem;
         left: 100vw;
         font-size: 1.3rem;
         box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.464);
         background: transparent;
         backdrop-filter: blur(5px);
-        /* justify-content: center; */
     }
 
     .nav ul{
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
-        /* margin-top: 0.2rem; */
         line-height: 3rem;
     }
 
@@ -122,21 +113,11 @@
         margin-left: 1rem;
         padding-left: 0;
     }
-    /* .nav{
-        display: none;
-    } */
 
     .hambergur{
         display: flex;
         align-items: center;
         font-size: x-large;
-        /* position: absolute;
-        left: 95%;
-        top: 3%; */
-    }
-
-    #hambergur{
-        /* display: none; */
     }
 
     #hambergur:checked + .nav{

@@ -29,6 +29,9 @@ html{
     max-width: 1400px;
 
 }
+body{
+    overflow-x: hidden;
+}
 
 a{
     text-decoration: none;
@@ -40,29 +43,95 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
-    /* height: 100%; */
 }
 
+
+
+/* hambergur */
+
+
+.hambergur{
+    display: none;
+}
+
+#hambergur{
+    display: none;
+}
+
+.fa-solid{
+    background: transparent;
+}
+
+
+
+/* darkmenu */
+
+
+
+
+.darkmenu{
+    background: transparent;
+}
+
+[for="darkmenu"]
+{
+    position: fixed;
+    left: 1.5rem;
+    top: 6rem;
+    background: transparent;
+}
+
+[for="darkmenu"]:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: all 0.3s;
+}
+
+#darkmenu{
+    display: none;
+}
+
+#darkmenu:checked + .wrapper{
+    background-color: black;
+    color: white;
+
+   *{
+    background: black;
+    color: white;
+   }
+
+   .contact-link{
+    border-radius: 50%;
+    box-shadow: 4px -2px 30px 9px;
+   }
+
+   .email-icon i{
+    background: #ff4500;
+   }
+
+
+
+}
+
+
+
 /* HEADING */
+
+
+
+
+.header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 
 nav{
     justify-content: space-between;
     padding: 1rem;
     box-shadow: 4px -2px 40px 9px;
-    position: sticky;
-    top: 0;
-
-}
-
-/* .navbar{
-    position: sticky;
-    top: 0;
-} */
-.header{
-    /* position: sticky; */
-    /* top: 0; */
-    
 }
 
 .logo{
@@ -79,10 +148,6 @@ nav{
 
 }
 
-.hambergur{
-    display: none;
-}
-
 .post::before{
     content: "";
     width: 4px;
@@ -91,19 +156,12 @@ nav{
     margin-left: -1rem;
 }
 
-/* .nav{
-    display: flex;
-    justify-content: center
-    align-items: center;
-} */
-
 .nav-list{
     justify-content: center;
     align-items: center;
 }
 
-    ul>li{
-    /* align-items: center; */
+ul>li{
     list-style: none;
     font-weight: bolder;
     justify-content: center;
@@ -115,18 +173,17 @@ ul>li:hover{
 }
 
 
+
 /* <!-- HERO SECTION --> */
+
 
 
 .hero{
     margin-top: 20rem;
-     /* border: 2px solid red; */
-     /* margin: auto; */
-     background: #ff4500;
-     justify-content: space-between;
-     align-items: center;
-    flex-wrap: wrap;
-     
+    background: #ff4500;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
 }
 
 .hero-section{
@@ -135,14 +192,13 @@ ul>li:hover{
 
 .detail{
     background: transparent;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap;    
 }
 
 .detail-section{
     background: orangered;
 }
+
 .name{
     background: transparent;
     margin-top: 2rem;
@@ -150,10 +206,8 @@ ul>li:hover{
 }
 
 .iam{
-    /* background: #ff4500; */
     background: transparent;
     padding-left: 5rem;
-    /* font-weight: bold; */
     font-size: 1.3rem;
 }
 
@@ -167,25 +221,16 @@ ul>li:hover{
     background: transparent;
     margin-top: 1rem;
     margin-left: 8rem;
-    /* position: relative;
-    left: 30%; */
     font-size: 2.5rem;
     font-weight: bolder;
     letter-spacing: 5px;
-    /* margin-left: 3rem; */
 }
 
 .detail>p{
     background: transparent;
     margin-top: 2rem;
-    /* position: relative;
-    left: 15%; */
     font-size: 1.3rem;
     margin-left: 7em;
-    /* margin-bottom: 2rem; */
-
-    /* font-weight: bolder; */
-    /* letter-spacing: 5px; */
 }
 
 .detail>button{
@@ -208,36 +253,23 @@ ul>li:hover{
 .image{
     background: transparent;
 }
+
 .img1{
     background: transparent;
     height: 150%;
     position: relative;
-    /* right: 5rem; */
     top: -40%;
     margin-left: 50%;
-    /* z-index: 1; */
 }
 
 .banner{
-    border: 2px solid black;
     border-radius: 10px;
     margin-top: 4rem;
     padding: 2rem;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    /* background: linear-gradient(
-        to top, 
-        skyblue 0%, 
-        skyblue 50%, 
-        orangered 50%, 
-        orangered 100%); */
-    /* width: 90%;
-    z-index: -1; */
-
-    /* background: orangered repeat-x; */
-    /* background-size: 50% auto; */
-    /* width: 90% */
+    box-shadow: 4px -2px 40px 9px;
 }
 
 .info-content .icon-container {
@@ -251,7 +283,6 @@ ul>li:hover{
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(100px);
-    
 }
 
 .info-content span{
@@ -280,18 +311,20 @@ ul>li:hover{
     width: 2px;
     height: 70px
 }
+
+
+
 /* <!-- SKILL SECTION --> */
+
+
 
 .skill{
     margin-top: 5rem;
-    
-    /* border: 2px solid black; */
 }
 
 .skills{
     justify-content: center;
-    font-weight: bolder;
-   
+    font-weight: bolder;   
 }
 
 .skills h2{
@@ -312,13 +345,17 @@ ul>li:hover{
 .js{
     padding-left: 1.4rem;
 }
+
+
+
 /* <!-- PROJECT SECTION --> */
+
+
+
 
 .projects{
     margin: 5rem;
-    /* border: 2px solid red; */
     width: 90%;
-
 }
 
 .Project-title{
@@ -330,22 +367,16 @@ ul>li:hover{
     margin-bottom: 5rem;
 }
 
-
-
 .self-projects{
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     margin: 10px;
-    /* border: 2px solid blue; */
-    /* flex-grow: 1; */
     margin: 1rem;
-    width: 100%;
-
-    
+    width: 100%;    
 }
  .projext{
-    /* border: 2px solid green; */
     margin-bottom: 1rem;
     padding: 1em;
     width: 400px;
@@ -359,19 +390,20 @@ ul>li:hover{
     justify-content: center;
     align-items: center;
 }
+
 .photo img{
     margin-left: 1rem;
     width: 90%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* border: 2px solid red; */
-  
+    align-items: center;  
 }
+
 .p-logo{
     justify-content: center;
     margin: 1rem;
 }
+
 .p-logo .fa-brands{
     margin-top: 7px;
     font-size: 15px;
@@ -380,23 +412,25 @@ ul>li:hover{
 .p-name{
     margin-bottom: 20px;
 }
+
+
+
 /* <!-- ABOUT --> */
+
+
 
 .about-section{
     margin-top: 5rem;
     background: rgb(155 219 126);
     padding: 50px;
-    /* flex-wrap: wrap; */
 }
 
 .about-photo{
-    /* border: 2px solid red; */
     background: transparent ;
     height: 400px;
     width: 50%;
     margin-left: 1rem;
     margin-top: 20%;
-    
 }
 
 .about-photo img{
@@ -404,7 +438,6 @@ ul>li:hover{
 }
 
 .about-details{
-    /* border: 2px solid red; */
     margin: 1rem;
     width: 100%;
     background: transparent;
@@ -484,6 +517,8 @@ ul>li:hover{
 
 /* <!-- CONTACT --> */
 
+
+
 .contact-section{
     background: transparent;
 }
@@ -519,11 +554,9 @@ ul>li:hover{
 .contact-link{
     margin-top: 5rem;
     justify-content: center;
-    /* border: 2px solid red; */
 }
 
 .email-section{
-    /* border: 2px solid red; */
     background: black;
 }
 
@@ -535,7 +568,6 @@ ul>li:hover{
     font-size: x-large;
     padding: 1rem;
     border-radius: 40px;
-    /* font-weight: bold; */
 }
 
 .email-section span{
@@ -553,19 +585,24 @@ ul>li:hover{
 }
 
 
+
 /* <!-- FOOTER --> */
+
+
 
 .footer{
     margin-top: 5rem;
+    background: black;
+    width: 100%;
 }
+
 .footer-items{
     margin-top: 1rem;
     background: black;
     width: 100%;
     height: auto;
     justify-content: center;
-    padding: 1rem ;
-    
+    padding: 1rem ;    
 }
 
 .footer1,.footer2{
@@ -579,17 +616,12 @@ ul>li:hover{
 }
 
 .Links{
-    
-    /* flex-direction: column; */
     background: black;
-    padding-top: 1rem;
-   
+    padding-top: 1rem;   
 }
-
 
 .Links ul li{
     background: black;
-   
 }
 
 .Links ul li a{
@@ -598,6 +630,7 @@ ul>li:hover{
     background: black;
     color: white;
     margin-top: 1rem;
+    line-height: 1rem;   
 }
 
 .copyright{
@@ -605,7 +638,6 @@ ul>li:hover{
     background: black;
     align-items: center;
     height: 100px;
-    /* margin-top: 1rem; */
 }
 
 .copyright p{
@@ -613,7 +645,11 @@ ul>li:hover{
     color: white;
 }
 
+
+
 /* scroll */
+
+
 
 .goUp{
     height: 70px;
@@ -638,48 +674,4 @@ ul>li:hover{
     font-size: 3rem;
 }
 
-.darkmenu{
-    background: transparent;
-}
 
-[for="darkmenu"]
-{
-    position: fixed;
-    left: 1.5rem;
-    top: 6rem;
-    /* border: 2px solid red; */
-    background: transparent;
-    /* border-radius: 50%; */
-}
-
-[for="darkmenu"]:hover{
-    cursor: pointer;
-    transform: scale(1.3);
-    transition: all 0.3s;
-}
-
-#darkmenu{
-    display: none;
-}
-/* #darkmenu:checked{
-    zoom: 2;
-} */
-#darkmenu:checked + .wrapper{
-    background-color: black;
-    color: white;
-
-   *{
-    background: black;
-    color: white;
-   }
-
-}
-
-
-#hambergur{
-    display: none;
-}
-
-.fa-solid{
-    background: transparent;
-}
