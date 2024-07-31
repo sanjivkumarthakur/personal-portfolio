@@ -109,7 +109,13 @@ a{
     background: #ff4500;
    }
 
+   .goUp{
+    background: orangered;
+   }
 
+   .goUp i{
+    background: orangered;
+   }
 
 }
 
