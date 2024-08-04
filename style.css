@@ -265,7 +265,7 @@ ul>li:hover{
     height: 150%;
     position: relative;
     top: -40%;
-    margin-left: 50%;
+    margin-left: 20%;
 }
 
 .banner{
@@ -378,8 +378,6 @@ ul>li:hover{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin: 10px;
-    margin: 1rem;
     width: 100%;    
 }
  .projext{
