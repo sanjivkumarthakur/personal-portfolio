@@ -97,9 +97,13 @@
         left: 100vw;
         font-size: 1.3rem;
         background: transparent;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(1px);
     }
 
+    .nav-list{
+        background: transparent;
+    }
+    
     .nav ul{
         flex-direction: column;
         align-items: center;

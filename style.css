@@ -133,11 +133,11 @@ a{
     z-index: 1;
 }
 
-
 nav{
     justify-content: space-between;
     padding: 1rem;
     box-shadow: 4px -2px 40px 9px;
+    align-items: center;
 }
 
 .logo{
@@ -160,11 +160,6 @@ nav{
     height: 100%;
     background: var(--bg-color);
     margin-left: -1rem;
-}
-
-.nav-list{
-    justify-content: center;
-    align-items: center;
 }
 
 ul>li{
@@ -265,7 +260,7 @@ ul>li:hover{
     height: 150%;
     position: relative;
     top: -40%;
-    margin-left: 20%;
+    margin-left: 40%;
 }
 
 .banner{
